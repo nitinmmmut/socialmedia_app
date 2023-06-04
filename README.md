@@ -1,34 +1,70 @@
-# socialmedia_app
+# Getting Started with Create React App
 
-Task
-Create a multi-page React app that fetches data from an API and displays it in different views, using React Router and Redux to manage state and routing.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Problem Statement
-You have to use React Router to create multiple routes and views for your app. Your app should have the following views:
-A home page that displays a list of items fetched from an API.
-A detail page that displays information about a single item.
-Your app should have two routes:
-`/` - The home page.
-`/item/:id` - The detail page for a specific item, where `:id` is the ID of the item.
+## Available Scripts
 
-Use Redux to manage the app's state. You should create at least one Redux store to hold the data you fetch from the API and use it to populate your views.
+In the project directory, you can run:
 
-Fetch data from an API using Redux Thunk middleware. Use the `fetch` method to get the data from the following API endpoint: `https://jsonplaceholder.typicode.com/posts`.
-The data returned from the API will be an array of objects. Each object will have the following properties:
-`userId`: The ID of the user who created the post.
-`id`: The ID of the post.
-`title`: The title of the post.
-`body`: The body of the post.
-`imgSrc`: Since the image is not coming in the api result use this as your image src in the post component - https://picsum.photos/200?random=${post.id} where [post.i](http://post.id/)d is the id given in the object returned by api.
-You should create a Redux action to fetch the data and update the Redux store with the fetched data.
+### `npm start`
 
-Display the data in your views using React components. You should create separate components for each view, and use React Router to navigate between them.
-The home page should display a list of items, with each item displaying the title of the post. Clicking on an item should take the user to the detail page for that item. Make sure that you don’t show the entire title and the entire description as it will not look nice. Slice it and show it. As shown in the UI. Add “Read More…” if the entire description doesn’t fit inside the card view.
-The detail page should display the title and body of the post, as well as the ID of the user who created the post.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Add styling to the website as shown in the figma
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Make sure your app is responsive and works well on both desktop and mobile devices. Also manage the loading state properly using redux as well.
-Design Links
-Figma Link:
-https://www.figma.com/file/HywHp4NEMyXhcBNaaPC65a/F4---Module-Test---May?type=design&node-id=0-1&t=LUG462Sserb2mw7U-0
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
